@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+  </head>
+  <body> 
+    <div class="header">
+      <h1>Math assistant 👾</h1>
+    </div>
+    <div class="calculator_figures">
+      <p>👋 Hi, i'm math assistant, i will help you whit math 🤖</p>
+      <div class="square box">
+        <form action=""> 
+          <h2>⬛ square</h2>
+          <p>¿how long is the side of your squere?</p>
+          <div class="sides">
+            <input id="int_cuadrado" type="number">
+          </div>
+          <div class="buttons_results">
+            <button type="button" onclick="calcular_perimetro_cuadrado ()">get perimeter</button>
+            <button type="button" onclick="calcular_area_cuadrado ()">get area</button>
+          </div>
+        </form>
+      </div>
+      <div class="triangle box">
+        <form action=""> 
+          <h2>🔺 triangle</h2>
+          <p>¿how long are the sides of your triangle?</p>
+          <div class="sides">
+            <p>side 1</p>
+            <input id="int_triangle" type="number">
+            <p>side 2</p>
+            <input id="int_triangle2" type="number">
+            <p>base</p>
+            <input id="int_triangle3" type="number">
+          </div>
+          <div class="buttons_results">
+            <button type="button" onclick="calcular_perimetro_triangulo ()">get perimeter</button>
+            <button type="button" onclick="calcular_area_triangulo ()">get area</button>
+          </div>
+        </form>
+      </div>
+      <div class="circle box">
+        <form action=""> 
+          <h2>🏀 circle</h2>
+          <p>¿how long is the radius of your circle?</p>
+          <div class="sides">
+            <input id="int_circle" type="number">
+          </div>
+          <div class="buttons_results">
+            <button type="button" onclick="calcular_perimetro_circulo ()">get perimeter</button>
+            <button type="button" onclick="calcular_area_circulo ()">get area</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/calculador_figuras.js"> </script>
+  </body>
+</html>

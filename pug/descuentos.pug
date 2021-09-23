@@ -1,0 +1,17 @@
+extends head
+block content
+	.header
+		h1 Math assistant 👾
+	.container
+		.discount.box
+			h2 Descubre tu descuento
+			.data
+				p Precio del producto
+				input#inp_precio(type="number")
+				p Descuento
+				input#inp_descuento(type="number")
+			button(type="button" onclick="precio_final()") Calcular descuento.
+			p el precio con descuento es:
+			p#result_price
+block script 
+	script(src="../js/descuentos.js") 

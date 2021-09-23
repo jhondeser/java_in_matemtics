@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Document</title>
+  </head>
+  <body> 
+    <div class="header">
+      <h1>Math assistant 👾</h1>
+    </div>
+    <div class="container">
+      <div class="discount box">
+        <h2>Descubre tu descuento</h2>
+        <div class="data">
+          <p>Precio del producto</p>
+          <input id="inp_precio" type="number">
+          <p>Descuento</p>
+          <input id="inp_descuento" type="number">
+        </div>
+        <button type="button" onclick="precio_final()">Calcular descuento.</button>
+        <p>el precio con descuento es:</p>
+        <p id="result_price"></p>
+      </div>
+    </div>
+    <script src="../js/descuentos.js"> </script>
+  </body>
+</html>

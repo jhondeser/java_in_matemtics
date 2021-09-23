@@ -1,0 +1,40 @@
+extends head
+block content
+	.header
+		h1 Math assistant 👾
+	.calculator_figures
+		p 👋 Hi, i'm math assistant, i will help you whit math 🤖
+		.square.box
+			form(action="") 
+				h2 ⬛ square
+				p ¿how long is the side of your squere?
+				.sides
+					input#int_cuadrado(type="number")
+				.buttons_results
+					button(type="button" onclick="calcular_perimetro_cuadrado ()") get perimeter
+					button(type="button" onclick="calcular_area_cuadrado ()") get area
+		.triangle.box
+			form(action="") 
+				h2 🔺 triangle
+				p ¿how long are the sides of your triangle?
+				.sides
+					p side 1
+					input#int_triangle(type="number")
+					p side 2
+					input#int_triangle2(type="number")
+					p base
+					input#int_triangle3(type="number")
+				.buttons_results
+					button(type="button" onclick="calcular_perimetro_triangulo ()") get perimeter
+					button(type="button" onclick="calcular_area_triangulo ()") get area
+		.circle.box
+			form(action="") 
+				h2 🏀 circle
+				p ¿how long is the radius of your circle?
+				.sides
+					input#int_circle(type="number")
+				.buttons_results
+					button(type="button" onclick="calcular_perimetro_circulo ()") get perimeter
+					button(type="button" onclick="calcular_area_circulo ()") get area
+block script 
+	script(src="../js/calculador_figuras.js") 

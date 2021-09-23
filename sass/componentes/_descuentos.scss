@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.discount {
+  display: flex;
+	justify-content: center;
+  background-color: #f1c40f;
+}
+
+.data {
+  margin-bottom: 20px;
+}
+
+button{ 
+  align-self: center;
+}

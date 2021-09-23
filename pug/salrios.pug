@@ -1,0 +1,20 @@
+extends head
+block content
+  .header
+    h1 salary
+  .container_salary
+    h2 calculate salary
+    .container_salary--input
+      p insert the name of the worker:
+      input#inp_name(type="text")
+    .container_salary--input
+      p insert the salary of the worker:
+      input#inp_salary(type="number")
+    button(onclick="agregar_trabajador ()") Add worker.
+    .container_salary--media
+      p calculate the mean wages:
+      button(onclick="mediana_salarys (colombia)") calculate
+      p#media_screen
+block script
+  script(src="../js/salarios.js")
+  script(src="../js/analisis.js")

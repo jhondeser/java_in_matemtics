@@ -1,0 +1,82 @@
+$Fuente1: 'Lato', sans-serif;
+$Fuente2: 'Oswald', sans-serif;
+
+body{
+	margin: 0;
+  font-family: $Fuente2;
+	background-color: #d7bde2;
+}
+
+.header {
+  display: flex;
+  font-family: $Fuente1;
+  color: #f39c12;
+  justify-content: center;
+  background-color: #f4d03f;
+}
+
+input{
+	width: 50%;
+	-webkit-appearance: textfield !important;
+	margin: 0;
+	-moz-appearance:textfield !important;
+	border-radius: 20px;
+	border: 1px solid white;
+	height: 25px;
+	background-color:  #f8c471 ;
+	text-align: center;
+	width: 190px;
+}
+
+button{
+	border-radius: 20px;
+	border: 1px solid white;
+	height: 30px;
+	background-color:  #f39c12 ;
+	padding: 5px;
+	font-family: $Fuente2;
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px  #d35400 ;
+}
+
+.calculator_figures {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.buttons_results {
+		display: flex;
+		justify-content: space-between;
+		align-self: center;
+		width: 55%;
+		margin-top: 20px;
+	}
+
+	.square {
+		background-color:  #f5b041;
+	}
+
+	.triangle {
+		background-color: #f1c40f;
+	}
+
+	.circle {
+		background-color:  #e74c3c;
+		margin-bottom: 20px;
+	}
+}
